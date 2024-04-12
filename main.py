@@ -44,15 +44,10 @@ while running:
                 text = font.render(f"К-во попаданий:  {tref}", True, "black")
                 # target_x = random.randint(0, const.SCREEN_WIDTH - target_width)
                 target_y = random.randint(0, const.SCREEN_HEIGHT - target_height)
-<<<<<<< Updated upstream
 
     screen.blit(text, (20, 20))
     screen.blit(target_img, (target_x, target_y))
     clock.tick(40)
-
-=======
-    screen.blit(target_img, (target_x, target_y))
->>>>>>> Stashed changes
     pygame.display.update()
 
 # eof game
