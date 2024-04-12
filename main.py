@@ -4,7 +4,7 @@ import constfile as const
 pygame.init()
 
 screen = pygame.display.set_mode((const.SCREEN_WIDTH, const.SCREEN_HEIGHT))
-pygame.display.set_caption("Game Tup")
+pygame.display.set_caption("Game - Tup")
 icon = pygame.image.load("image/sniper-team.jpg")
 pygame.display.set_icon(icon)
 
@@ -44,11 +44,15 @@ while running:
                 text = font.render(f"К-во попаданий:  {tref}", True, "black")
                 # target_x = random.randint(0, const.SCREEN_WIDTH - target_width)
                 target_y = random.randint(0, const.SCREEN_HEIGHT - target_height)
+<<<<<<< Updated upstream
 
     screen.blit(text, (20, 20))
     screen.blit(target_img, (target_x, target_y))
     clock.tick(40)
 
+=======
+    screen.blit(target_img, (target_x, target_y))
+>>>>>>> Stashed changes
     pygame.display.update()
 
 # eof game
